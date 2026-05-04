@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Directory</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Employee Directory</h1>
+
+    <div class="controls">
+      <input type="text" id="searchName" placeholder="Search by name...">
+      <input type="text" id="searchSkill" placeholder="Search by skill...">
+      <select id="filterExperience">
+        <option value="all">All experience levels</option>
+        <option value="junior">Junior (< 3 years)</option>
+        <option value="middle">Middle (3–5 years)</option>
+        <option value="senior">Senior (> 5 years)</option>
+      </select>
+      <button id="btnSort">SORT BY NAME</button>
+      <button id="btnReset">RESET</button>
+    </div>
+
+    <p id="employeeCount" class="counter">Number of employees: 0</p>
+
+    <div id="employeeList"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
