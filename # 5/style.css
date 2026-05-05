@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f7f9fc;
+  color: #333;
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  margin-bottom: 20px;
+}
+
+nav button {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  margin-left: 15px;
+  cursor: pointer;
+  color: #0077cc;
+  font-weight: 500;
+}
+nav button:hover {
+  text-decoration: underline;
+}
+
+main {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+#search-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+#search-form input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+#search-form button {
+  padding: 8px 16px;
+  background: #0077cc;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 15px;
+  border-bottom: 1px solid #eee;
+}
+li:last-child {
+  border-bottom: none;
+}
+
+.product-title, .bag-item-name {
+  flex: 2;
+  font-weight: 500;
+}
+.product-price, .bag-item-price {
+  flex: 1;
+  color: #666;
+}
+.product-stock {
+  flex: 1;
+  font-size: 0.9em;
+  color: #2a7d2a;
+}
+.product-stock:contains("Out of stock") {
+  color: #c33;
+}
+
+button {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+button:hover {
+  background: #f0f0f0;
+}
+
+.add-to-bag-btn {
+  background: #0077cc;
+  color: #fff;
+  border: none;
+  font-weight: 600;
+}
+.add-to-bag-btn:hover {
+  background: #005fa3;
+}
+
+.bag-item-count {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.bag-item-count button {
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  font-size: 1.2rem;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.remove-btn {
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+}
+.remove-btn:hover {
+  background: #c0392b;
+}
+
+.bag-controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.bag-controls input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+#clear-bag-btn {
+  background: #e67e22;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+}
+#clear-bag-btn:hover {
+  background: #d35400;
+}
+
+#bag-total {
+  margin-top: 20px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: right;
+  border-top: 2px solid #0077cc;
+  padding-top: 12px;
+}

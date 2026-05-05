@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shop & Bag</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>My Shop</h1>
+    <nav>
+      <button id="home-link">Products</button>
+      <button id="bag-link">Bag (<span id="bag-count">0</span>)</button>
+    </nav>
+  </header>
+
+  <main id="products-page">
+    <form id="search-form">
+      <input type="text" name="search" placeholder="Search products..." />
+      <button type="submit">Search</button>
+    </form>
+    <ul id="products-list"></ul>
+  </main>
+
+  <main id="bag-page" style="display: none;">
+    <div class="bag-controls">
+      <input type="text" id="bag-search" placeholder="Search in bag..." />
+      <button id="clear-bag-btn">Clear Bag</button>
+    </div>
+    <ul id="bag-list"></ul>
+    <div id="bag-total">Total: $0</div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
