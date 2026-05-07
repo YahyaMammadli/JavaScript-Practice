@@ -135,8 +135,8 @@ bagSearchInput.addEventListener("input", (ev) => {
 });
 
 function updateBagCount() {
-  const totalItems = bags.reduce((sum, item) => sum + item.count, 0);
-  bagCountSpan.textContent = totalItems;
+  // const totalItems = bags.reduce((sum, item) => sum + item.count, 0); Counts the total number of items
+  bagCountSpan.textContent = bags.length; // Counts only unique number of items
 }
 
 function drawProducts(arr) {
