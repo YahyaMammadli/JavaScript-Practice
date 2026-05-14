@@ -53,17 +53,17 @@
 // const p3 = new Promise(resolve => setTimeout(() => resolve('2 sec'), 2000));
 
 // Promise.race([p1, p2, p3]).then(result => console.log('Race results:', result));
-// Выведет: "1 секунда"
+// Will output: "1 sec"
 
 
 
-// 1. Какой результат вернётся? => Вернётся результат самого быстрого промиса, т.е. "1 секунда" (p2).
+// 1. What result will be returned? => The result of the fastest promise will be returned, i.e., "1 секунда" (p2).
 
-// 2. Почему? => Promise.race разрешается (или отклоняется) значением первого завершившегося промиса.
-//     p2 завершается через 1 секунду, остальные позже.
+// 2. Why? => Promise.race resolves (or rejects) with the value of the first settled promise.
+//     p2 settles after 1 second, the others later.
 
-// 3. Что изменится при ошибке самого быстрого Promise? => Если самый быстрый промис будет отклонён (reject), то Promise.race немедленно отклонится с этой ошибкой, независимо от остальных промисов. 
-//     Результаты остальных не будут учтены.
+// 3. What changes if the fastest promise fails? => If the fastest promise is rejected, Promise.race immediately rejects with that error, regardless of the other promises.
+//     The results of the others will not be taken into account.
 
 
 
