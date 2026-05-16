@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Shop</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Product Shop</h1>
+
+    <div class="filters">
+      <div class="filter-group">
+        <label for="search">Search:</label>
+        <input id="search" type="text" placeholder="Search products..." />
+      </div>
+
+      <div class="filter-group">
+        <label for="category-select">Category:</label>
+        <select id="category-select">
+          <option value="">All Categories</option>
+          <option value="Laptops">Laptops</option>
+          <option value="Smartphones">Smartphones</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <form id="min-max-form">
+          <label>Price range:</label>
+          <input type="number" name="min" placeholder="Min" required />
+          <input type="number" name="max" placeholder="Max" required />
+          <button type="submit">Search</button>
+        </form>
+      </div>
+
+      <div class="filter-group">
+        <label for="product-id">Product ID:</label>
+        <input type="text" id="product-id" placeholder="Enter product ID" />
+        <button id="fetch-single" type="button">Get Product</button>
+      </div>
+    </div>
+
+    <ul id="shopList"></ul>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
